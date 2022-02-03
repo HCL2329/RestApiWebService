@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "2015ddc4-70dc-4186-b4e6-b7824b3f7deb",
+		"name": "WebServices",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/hello",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/AllUser/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"AllUser",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AllUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/AllUser",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"AllUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SingleUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/AllUser/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"AllUser",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n        \"name\": \"Ss\",\r\n        \"birthDate\": \"2020-02-03T11:06:44.532+00:00\"\r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/User",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"User"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteUser",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/AllUser/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"AllUser",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateUser",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 4,\r\n        \"name\": \"Shabnam Durgesh Gupta\",\r\n        \"birthDate\": \"2022-02-03T11:06:44.532+00:00\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/AllUser",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"AllUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateUserByID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\":2,\r\n        \"name\": \" Durgesh Gupta\",\r\n        \"birthDate\": \"2021-02-03T11:06:44.532+00:00\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/AllUser/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"AllUser",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
