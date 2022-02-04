@@ -48,14 +48,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/AllUser/1",
+					"raw": "localhost:8080/AllUser/2",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
 						"AllUser",
-						"1"
+						"2"
 					]
 				}
 			},

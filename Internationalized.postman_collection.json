@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "8d724401-e114-4735-876f-6434a0204ef1",
+		"name": "Internationalized",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Internationalized",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "nl",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/helloInternationalized",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"helloInternationalized"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "JacksonXml/ContentNegotiation",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/AllUser",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"AllUser"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
