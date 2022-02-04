@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "a5cb89a0-aa6d-48c0-ab41-18ed815e4323",
+		"name": "JPA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/Jpa/AllUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/Jpa/AllUser",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Jpa",
+						"AllUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/Jpa/AllUser/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Jpa",
+						"AllUser",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/Jpa/AllUser/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Jpa",
+						"AllUser",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \r\n        \"name\": \"Ram\",\r\n        \"birthDate\": \"2022-02-03T18:30:00.000+00:00\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/Jpa/User",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Jpa",
+						"User"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllPostForSpecificUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \r\n        \"description\": \"Good Work and very good progress\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/Jpa/AllUser/3/posts",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Jpa",
+						"AllUser",
+						"3",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createPost",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \r\n        \"description\": \"Good Work and very good progress\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/Jpa/User/3/posts",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Jpa",
+						"User",
+						"3",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
